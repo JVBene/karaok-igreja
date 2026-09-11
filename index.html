@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noite de Karaokê — Seleção de Playbacks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+ <div class="brand">
+   <h1>Noite de Karaokê</h1>
+   <p>Escolha o playback, monte a fila, chame o próximo cantor ao microfone.</p>
+ </div>
+ <div class="search-wrap">
+   <label for="search">Buscar música ou artista</label>
+   <input type="text" id="search" placeholder="Ex: Legião Urbana, Anitta...">
+ </div>
+</header>
+
+<main>
+ <!-- Catálogo -->
+ <section>
+   <h2>Catálogo</h2>
+   <div class="folder-picker">
+     <button class="pill" id="btnFolder" type="button">📁 Selecionar pasta de vídeos</button>
+     <p id="folderStatus">Nenhuma pasta selecionada — os playbacks abaixo não têm vídeo vinculado ainda.</p>
+     <input type="file" id="folderInput" webkitdirectory directory multiple hidden>
+   </div>
+   <div class="chips" id="genreChips"></div>
+   <div class="song-list" id="songList"></div>
+ </section>
+
+ <!-- Palco + Fila -->
+ <section>
+   <h2>Palco</h2>
+   <div class="stage" id="stage">
+     <div class="stage-placeholder" id="stagePlaceholder">
+       <div class="bars"><span></span><span></span><span></span><span></span><span></span></div>
+       <p>Nenhum playback carregado. Escolha uma música no catálogo ao lado.</p>
+     </div>
+     <video id="stageVideo" controls style="display:none;"></video>
+   </div>
+
+   <div class="now-info" id="nowInfo" style="display:none;">
+     <div class="song-title" id="nowTitle"></div>
+     <div class="song-meta" id="nowMeta"></div>
+     <div class="now-actions">
+       <button class="pill primary" id="btnNext">Chamar próximo da fila</button>
+       <button class="pill" id="btnClear">Encerrar playback</button>
+     </div>
+   </div>
+
+   <div class="queue">
+     <h2>Fila de cantores</h2>
+     <div id="queueList"></div>
+   </div>
+ </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
