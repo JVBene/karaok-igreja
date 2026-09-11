@@ -14,6 +14,8 @@
 ===================================================================== */
 const SONGS = [
  { id: 1, title: "Firmado na Rocha", artist: "Alessandro Vilas Boas", genre: "Worship", duration: "10:19", videoSrc: "", youtubeId: "" },
+ { id: 1, title: "Limitado", artist: "NeskOnly e 2Metro", genre: "Trap", duration: "2:45", videoSrc: "", youtubeId: "" },
+ { id: 1, title: "Estações", artist: "Dunamis Music", genre: "Pop", duration: "7:21", videoSrc: "", youtubeId: "" },
 ];
 
 const genres = ["Todos", ...new Set(SONGS.map(s => s.genre))];
