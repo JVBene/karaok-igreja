@@ -61,7 +61,7 @@ const SONGS = [
   { id: 1, title: "Isaías 9", artist: "Rodolfo Abrantes", genre: "Rock Alternativo", duration: "11:44", videoSrc: "", youtubeId: "" },
   { id: 1, title: "Jacó Segurou o Anjo", artist: "", genre: "Corinho", duration: "3:22", videoSrc: "", youtubeId: "" },
   { id: 1, title: "Joquebede", artist: "Pr. Isaías Santos", genre: "Corinho", duration: "3:34", videoSrc: "", youtubeId: "" },
-  { id: 1, title: "Escudo", artist: "", genre: "Louvor", duration: "", videoSrc: "", youtubeId: "" },
+  { id: 1, title: "Escudo", artist: "", genre: "Louvor", duration: "4:23", videoSrc: "", youtubeId: "" },
   { id: 1, title: "Não Temas", artist: "Diante do Trono", genre: "Louvor", duration: "4:03", videoSrc: "", youtubeId: "" },
   { id: 1, title: "O Barco Balançou", artist: "Aline Barros", genre: "Pop Infantil", duration: "3:07", videoSrc: "", youtubeId: "" },
   { id: 1, title: "O Melhor de Deus", artist: "Kleber Lucas", genre: "Pop Gospel", duration: "4:53", videoSrc: "", youtubeId: "" },
