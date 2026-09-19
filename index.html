@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Noite da Pizza + Karaokê — Seleção de Playbacks</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Fontes combinadas: Inter, Bebas Neue e Big Shoulders Display -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Display:wght@500;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 
 <style>
@@ -13,7 +15,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza a barra de pesquisa e o conteúdo no meio */
+    align-items: center;
     text-align: center;
   }
 
@@ -21,22 +23,43 @@
     position: absolute;
     top: 15px;
     right: 20px;
-    max-height: 100px; /* Ajuste o tamanho da imagem se necessário */
+    max-height: 100px;
     width: auto;
   }
 
   .search-wrap {
     margin: 0 auto;
     width: 100%;
-    max-width: 500px; /* Mantém a barra com uma largura boa no meio */
+    max-width: 500px;
   }
 </style>
 </head>
-<body>
+<body class="intro-travada">
 
+<!-- VINHETA DE ENTRADA -->
+<div class="intro" id="intro" role="dialog" aria-label="Abertura do karaokê">
+  <div class="intro__dots" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="intro__linha">
+    <div class="ball-track" aria-hidden="true"><div class="ball-dot"></div></div>
+    <h1 class="lyric">
+      <span class="lyric__base">“Tudo quanto tem fôlego louve ao Senhor.</span>
+      <span class="lyric__fill" aria-hidden="true">“Tudo quanto tem fôlego louve ao Senhor.</span>
+    </h1>
+  </div>
+
+  <p class="intro__sub">Salmos 150:6</p>
+
+  <img class="intro__logo" src="logomayscruz.png" alt="Logo do karaokê">
+
+  <button class="intro__skip" type="button" id="pularIntro">Pular abertura</button>
+</div>
+
+<!-- CONTEÚDO PRINCIPAL (KARAOKÊ) -->
 <header>
  <img src="logomays.png" alt="Logo" class="header-logo">
-
  <div class="brand">
    <h1>🍕 Noite da Pizza + Karaokê 🎤</h1>
    <p>Escolha a música, pegue o microfone e cante!</p>
@@ -59,6 +82,7 @@
    <div class="chips" id="genreChips"></div>
    <div class="song-list" id="songList"></div>
  </section>
+ 
  <!-- Palco + Fila -->
  <section>
    <h2>Palco</h2>
