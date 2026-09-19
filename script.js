@@ -40,6 +40,7 @@ const SONGS = [
   { id: 1, title: "A Vitória da Cruz", artist: "Diante do Trono", genre: "Pop Gospel", duration: "7:59", videoSrc: "", youtubeId: "" },
   { id: 1, title: "Aquele Que Está Feliz", artist: "Comunidade de Ninópolis", genre: "Pop Gospel", duration: "3:16", videoSrc: "", youtubeId: "" },
   { id: 1, title: "Celebrai a Cristo", artist: "", genre: "Pop Gospel", duration: "2:49", videoSrc: "", youtubeId: "" },
+  { id: 1, title: "Chuta Que É Laço", artist: "Adriano Gospel Funk", genre: "Funk", duration: "2:52", videoSrc: "", youtubeId: "" },
   { id: 1, title: "Dança do Canguru", artist: "Aline Barros", genre: "Pop Infantil", duration: "3:02", videoSrc: "", youtubeId: "" },
   { id: 1, title: "Dança do Pinguim", artist: "Aline Barros", genre: "Pop Infantil", duration: "3:00", videoSrc: "", youtubeId: "" },
   { id: 1, title: "Dançar na Chuva", artist: "Fernandinho", genre: "Pop Rock", duration: "4:35", videoSrc: "", youtubeId: "" },
